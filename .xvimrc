@@ -1,0 +1,10 @@
+set alwaysuseinputsource
+set alwaysuseinputsource
+set relativenumber
+set number
+set clipboard=unnamed
+nmap 4 <S-$>
+nmap <S-D> <C-d>
+nmap <S-U> <C-u>
+nmap <S-J> 10j
+nmap <S-K> 10k
