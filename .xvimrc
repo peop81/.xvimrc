@@ -1,10 +1,21 @@
 set alwaysuseinputsource
-set alwaysuseinputsource
 set relativenumber
 set number
 set clipboard=unnamed
+set hlsearch
+set ignorecase
+set smartcase
 nmap 4 <S-$>
 nmap <S-D> <C-d>
 nmap <S-U> <C-u>
 nmap <S-J> 10j
 nmap <S-K> 10k
+
+inoremap <C-h> <left>
+inoremap <C-l> <right>
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+
+" reselect visual block after indent
+vnoremap < <gv
+vnoremap > >gv
