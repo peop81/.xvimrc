@@ -5,6 +5,7 @@ set relativenumber
 set number
 set clipboard=unnamed
 set hlsearch
+set ignorecase
 set smartcase
 nmap <S-J> 10j
 nmap <S-K> 10k
