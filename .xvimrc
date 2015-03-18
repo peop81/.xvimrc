@@ -12,7 +12,7 @@ nmap <S-K> 5k
 
 " Map $ to 4
 nmap <S-€> <S-$>
-nmap <S-#> <0>
+nmap 0 0w
 nmap <S-U> <C-u>
 
 inoremap <C-h> <left>
