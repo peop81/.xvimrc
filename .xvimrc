@@ -7,12 +7,12 @@ set clipboard=unnamed
 set hlsearch
 set ignorecase
 set smartcase
-nmap <S-J> 10j
-nmap <S-K> 10k
+nmap <S-J> 5j
+nmap <S-K> 5k
 
 " Map $ to 4
-nmap 4 <S-$>
-nmap <S-D> <C-d>
+nmap <S-€> <S-$>
+nmap <S-#> <0>
 nmap <S-U> <C-u>
 
 inoremap <C-h> <left>
@@ -21,9 +21,13 @@ inoremap <C-j> <down>
 inoremap <C-k> <up>
 
 " enter to insert empty line in normal mode
-nnoremap <enter> <S-A><enter><esc>
-nnoremap <S-enter> k<S-A><enter><esc>
+nnoremap <enter> <S-A><enter><esc> 
+nnoremap <S-enter> k<S-A><enter><esc> 
 
 "reselect visual block after indent
 vnoremap < <gv
 vnoremap > >gv
+
+" auto center
+nnoremap n nzz
+nnoremap N Nzz
