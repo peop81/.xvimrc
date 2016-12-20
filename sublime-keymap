@@ -26,5 +26,20 @@
 { "keys": ["super+8"], "command": "toggle_comment", "args": { "block": true } },
 
 { "keys": ["super+9"], "command": "edit_settings", "args": {"base_file": "${packages}/Default/Default ($platform).sublime-keymap", "default": "[\n\t$0\n]\n"} },
-{ "keys": ["super+0"], "command": "focus_side_bar" }
+{ "keys": ["super+0"], "command": "focus_side_bar" },
+{ "keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 1.0} },
+{ "keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -1.0} },
+{ "keys": ["super+j"], "command": "run_macro_file", "args": {"file": "Packages/User/down_n_lines.sublime-macro"} },
+{ "keys": ["super+k"], "command": "run_macro_file", "args": {"file": "Packages/User/up_n_lines.sublime-macro"} },
+{ "keys": ["alt+m"], "command": "expand_selection", "args": {"to": "brackets"} },
+{
+  "keys": ["super+shift+s"], "command": "browser_refresh", "args": {
+    "auto_save": true,
+    "delay": 0.0,
+    "activate": false,
+    "browsers" : ["safari"]
+  }
+}
+/*{ "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/User/down_nn_lines.sublime-macro"} },
+{ "keys": ["super+u"], "command": "run_macro_file", "args": {"file": "Packages/User/up_nn_lines.sublime-macro"} }*/
 ]
