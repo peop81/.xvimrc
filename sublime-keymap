@@ -1,6 +1,6 @@
 [
 	{ "keys": ["super+n"], "command": "toggle_side_bar" },
-	//{ "keys": ["alt+down"], "command": "§§_under_expand" }
+	// { "keys": ["super+n+shift"], "command": "new_file" },
 	{ "keys": ["alt+up"], "command": "expand_region" },
 	{ "keys": ["super+alt+o"], "command": "toggle_overwrite" },
 	{ "keys": ["f1"],"command": "dired","args": { "immediate": true }},
@@ -13,8 +13,8 @@
 	{ "keys": ["super+1"], "command": "focus_group", "args": { "group": 0 } },
 	{ "keys": ["super+2"], "command": "focus_group", "args": { "group": 1 } },
 
-{ "keys": ["super+k"], "command": "scroll_lines", "args": {"amount": 4.0}  },
-{ "keys": ["super+j"], "command": "scroll_lines", "args": {"amount": -4.0}  },
+// { "keys": ["super+k"], "command": "scroll_lines", "args": {"amount": 4.0}  },
+// { "keys": ["super+j"], "command": "scroll_lines", "args": {"amount": -4.0}  },
 
 { "keys": ["super+shift+v"], "command": "paste" },
 { "keys": ["super+v"], "command": "paste_and_indent" },
@@ -29,8 +29,12 @@
 { "keys": ["super+0"], "command": "focus_side_bar" },
 { "keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 1.0} },
 { "keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -1.0} },
-{ "keys": ["super+j"], "command": "run_macro_file", "args": {"file": "Packages/User/down_n_lines.sublime-macro"} },
-{ "keys": ["super+k"], "command": "run_macro_file", "args": {"file": "Packages/User/up_n_lines.sublime-macro"} },
+//{ "keys": ["super+j"], "command": "run_macro_file", "args": {"file": "Packages/User/down_n_lines.sublime-macro"} },
+//{ "keys": ["super+k"], "command": "run_macro_file", "args": {"file": "Packages/User/up_n_lines.sublime-macro"} },
+// { "keys": ["super+j"], "command": "move_amount", "args": { "by": "lines", "forward": false, "amount": 5, "extend": true } },
+// { "keys": ["super+k"], "command": "move_amount", "args": { "by": "lines", "forward": true, "amount": 5, "extend": true } },
+{ "keys": ["super+j"], "command": "move_amount", "args": { "by": "lines", "forward": true, "amount": 5 } },
+{ "keys": ["super+k"], "command": "move_amount", "args": { "by": "lines", "forward": false, "amount": 5 } },
 { "keys": ["alt+m"], "command": "expand_selection", "args": {"to": "brackets"} },
 {
   "keys": ["super+shift+s"], "command": "browser_refresh", "args": {
@@ -40,6 +44,4 @@
     "browsers" : ["safari"]
   }
 }
-/*{ "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/User/down_nn_lines.sublime-macro"} },
-{ "keys": ["super+u"], "command": "run_macro_file", "args": {"file": "Packages/User/up_nn_lines.sublime-macro"} }*/
 ]
